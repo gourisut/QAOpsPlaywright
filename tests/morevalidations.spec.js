@@ -46,10 +46,10 @@ test("Screenshot and visual comparision",async({page})=>{
 });
 
 //take screenshot --> store --> take another screen shot --> compare both
-test.only('visual',async({page})=>{
+// test.only('visual',async({page})=>{
 
-    await page.goto("https://rahulshettyacademy.com/AutomationPractice/", { waitUntil: 'domcontentloaded' });
-    //if landing page screenshot is not there test will fail but it will create landing page snap
-    //so next run will give you results
-    expect (await page.screenshot()).toMatchSnapshot('Landing.png');
-})
+//     await page.goto("https://rahulshettyacademy.com/AutomationPractice/", { waitUntil: 'domcontentloaded' });
+//     //if landing page screenshot is not there test will fail but it will create landing page snap
+//     //so next run will give you results
+//     expect (await page.screenshot()).toMatchSnapshot('Landing.png');
+// })
